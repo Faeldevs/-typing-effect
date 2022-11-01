@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.principal{
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    z-index: 5;
+}
+
+.principal__logo{
+   font-size: 25px;
+   font-weight: 800;
+   color: #fff;
+   text-transform:uppercase;
+}
+
+.span-dev{
+    color: rgb(189, 26, 230);
+}
+
+nav ul li{
+    
+    list-style: none;
+    display: inline;
+    padding: 0px 25px;
+    z-index: 7;
+}
+
+nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(189, 26, 230);
+    transition: all 0.5s;
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+}
+
+.titulo h1{
+    font-size: 140px;
+    color: #3c3c3c;
+    font-weight: 800;
+    line-height: 170px;
+}
+
+span{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.titulo p{
+    color: #737373;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 40px 0;
+}
+
+.botao{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(109, 13, 133);
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.botao:hover{
+    font-weight: 500;
+    font-size: 19px;
+    transition: all 1s;
+    color: #fff;
+    background-color: rgb(56, 8, 68);
+}
+
+.banner{
+    
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    margin-right: 3em;
+}
+
+.banner__imagem{
+    box-shadow: 2px 3px 4px 4px rgb(212, 208, 208);
+    border-radius: 100%;
+    width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width:980px) {
+    nav{
+        margin-top: 25px;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        display: block;
+        text-align: right;
+    }
+
+    nav ul li{
+        padding: 0;
+    }
+    
+    nav ul li a{
+        
+       padding: 0;
+    }
+    
+    .titulo h1{
+        font-size: 60px;
+    }
+
+    .banner{
+        z-index: -100000;
+    }
+}
+
